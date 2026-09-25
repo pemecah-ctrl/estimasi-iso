@@ -1,355 +1,142 @@
 <!DOCTYPE html>
 
-<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","outline":"#74777d","tertiary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","on-secondary-fixed-variant":"#264191","error-container":"#ffdad6","primary":"#000f1d","on-surface":"#0b1c30","error":"#ba1a1a","surface-tint":"#4c6075","on-secondary":"#ffffff","tertiary-fixed":"#89f5e7","surface-bright":"#f8f9ff","inverse-surface":"#213145","background":"#f8f9ff","surface-container-highest":"#d3e4fe","on-background":"#0b1c30","secondary":"#4059aa","primary-fixed-dim":"#b3c9e0","on-secondary-fixed":"#00164e","secondary-fixed-dim":"#b6c4ff","on-primary-fixed-variant":"#34495c","secondary-fixed":"#dce1ff","on-secondary-container":"#1d3989","on-error":"#ffffff","on-tertiary-fixed-variant":"#005049","on-surface-variant":"#43474c","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","on-primary-container":"#788da3","inverse-primary":"#b3c9e0","inverse-on-surface":"#eaf1ff","primary-fixed":"#cfe5fd","on-tertiary-fixed":"#00201d","on-primary-fixed":"#061d2f","primary-container":"#0f2537","surface-container-high":"#dce9ff","secondary-container":"#8fa7fe","on-tertiary-container":"#1e9b8f","tertiary-container":"#002925","surface-variant":"#d3e4fe","tertiary":"#00110f","surface-container":"#e5eeff","outline-variant":"#c3c7cd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","space-xl":"2.5rem","margin-sm":"1rem","space-md":"1rem",gutter:"1.5rem","space-xs":"0.25rem","gutter-sm":"1rem",margin:"2rem","space-lg":"1.5rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-xs":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-xl-mobile":["30px",{lineHeight:"38px",fontWeight:"700"}],"label-xs":["11px",{lineHeight:"14px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(15,37,55,0.06)]"><div class="h-20 max-w-7xl mx-auto px-margin-sm lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 bg-primary-container rounded flex items-center justify-center text-on-primary font-headline-sm font-bold tracking-wider">MSI</div><div class="flex flex-col"><span class="font-headline-sm font-bold text-primary tracking-tight leading-tight">PT Multi Sertifikasi Indonesia</span><span class="font-label-xs text-on-surface-variant uppercase tracking-widest">Indonesian Certification Body</span></div></div><div class="hidden sm:block h-8 w-px bg-outline-variant/60"></div><div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded"><div class="w-5 h-5 bg-primary rounded flex items-center justify-center text-[10px] font-bold text-on-primary">KAN</div><div class="flex flex-col"><span class="font-label-xs text-on-surface font-bold leading-none">LSSM-038-IDN</span><span class="font-label-xs text-on-surface-variant text-[9px] leading-none uppercase">Terakreditasi KAN</span></div></div></div><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors duration-150 text-primary font-bold" data-path="sertifikasi-flow" href="#">Portal Permohonan</a><a class="font-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-150" data-path="validasi-sertifikat" href="#">Verifikasi Sertifikat</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs text-on-tertiary-container bg-surface-container px-space-sm py-1 rounded"><span class="material-symbols-outlined text-sm">verified_user</span><span class="font-label-xs uppercase tracking-wider font-bold">Resmi &amp; Terdaftar</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(15,37,55,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl-5TnqHZPRHvCvb6gMpMKSmzwBgGtXG6teA_an2Udq06EUs-TQ1yTZIqYGtcs4YSTcJ9CuiAEXlmYP5tND3YiFSGDPiLnQUsP6S1bb3YolQh-rl6itI6Mus7bhIrGnoCsssIWRH-6A7NPAcxV572ZfWNIl_GJbNmOX6DF0naLqNhSifVr0_k93DUp0Ekvp4ZSjzWe_9CoziIhV-C1Oc7-Nb5lrnbX_T_uJEblIXjgoVIKGRoOP3LN7w"/></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-144px)]"><div class="flex flex-col w-full">
-<div class="relative w-full overflow-hidden py-space-lg lg:py-space-xl">
-<div class="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
-<div class="absolute top-1/3 -right-20 w-80 h-80 rounded-full bg-surface-container-high/40 blur-2xl pointer-events-none"></div>
-<div class="max-w-7xl mx-auto px-margin-sm lg:px-margin relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
-<!-- LEFT COLUMN: The Pitch & Regulatory Authority -->
-<div class="lg:col-span-6 flex flex-col space-y-space-lg">
-<!-- Logos and Official Accreditation Bar -->
-<div class="flex flex-wrap items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-xl shadow-sm">
-<div class="flex items-center gap-space-sm pr-space-md border-r border-surface-container">
-<img alt="Logo MSI" class="w-12 h-12 object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3i0L_Kcg_r8f7mnddre-TPO755cxAbKOwzXvZ3h3GD78sNCNOARGc-x_8jcg1Dq-b3934abUTOGL54siXku1TReuzE4w4LfbTj9S12FKPVXRLMKPzbEDHO-_14TAmCYNl1hVpp2TPGVgY8gk9IMKMwHvqHmLqzTSOAE0RLq5VPvczYzr6WPmgNwI0JxtaRtgyOjJ8d3zhHnNQwsrg68Rwe17DCGTnshzSromBGRUwG95cXzDu7YIIIwNnjNn8OgWtT4"/>
-<div class="flex flex-col">
-<span class="font-headline-sm text-primary tracking-tight font-bold leading-none">MSI</span>
-<span class="font-label-xs text-on-surface-variant uppercase tracking-wider mt-1">Multi Sertifikasi Indonesia</span>
-</div>
-</div>
-<div class="flex items-center gap-space-sm">
-<img alt="Logo KAN" class="w-11 h-11 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvjFKlSDxwMELkHEpdSgoNe74uuQHFzFUTeJp_m1Y5Kz4QdYMsKUByUDSHdQyOJWuWUwQWko4UTSH__8pWX-x0wUWA4ee2ut-amXkJMvWJ470556xjDNCfKRWfvf2t9rrvL1FbqpSeTm-QAA3CEICtZOxowHiPsz-CHvPiivtZsb8ZGvV9F67rQbySd0XMVC2Ffd5Kzsr_bflYoNlRFuqriX2hjNTc7GHu402M8Yr3OzlB67u2oUp_4G2r52elJGhR2vo"/>
-<div class="flex flex-col">
-<div class="flex items-center gap-1">
-<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
-<span class="font-label-xs font-bold text-on-surface uppercase tracking-wide">Akreditasi KAN Resmi</span>
-</div>
-<span class="font-label-xs text-on-surface-variant font-mono text-[10px] leading-tight">LSSM-047-IDN • LSSML-023-IDN • SMAP-009-IDN</span>
-</div>
-</div>
-</div>
-<!-- Main Value Proposition -->
-<div class="space-y-space-sm">
-<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-on-surface">
-<span class="material-symbols-outlined text-sm text-secondary">verified</span>
-<span class="font-label-xs uppercase tracking-wider font-bold">Kalkulator Estimasi Biaya &amp; Durasi Mandiri</span>
-</div>
-<h1 class="font-headline-xl text-primary tracking-tight leading-tight">
-              Hitung Estimasi Biaya Sertifikasi ISO Anda dalam 1 Menit
-            </h1>
-<p class="font-body-lg text-on-surface-variant">
-              Isi data perusahaan Anda dan langsung dapatkan telaah audit resmi:
-            </p>
-</div>
-<!-- Value Deliverables (4 Bullets in Styled High-Contrast Cards) -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
-<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-start gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-tertiary-container font-bold text-sm">payments</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-md text-primary font-bold">Estimasi Biaya &amp; Mandays</span>
-<span class="font-body-sm text-on-surface-variant mt-0.5">Perhitungan akurat basis IAF MD5 &amp; durasi audit onsite.</span>
-</div>
-</div>
-<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-start gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary font-bold text-sm">schedule</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-md text-primary font-bold">Proyeksi Timeline Terbit</span>
-<span class="font-body-sm text-on-surface-variant mt-0.5">Tahapan audit Stage 1, Stage 2, hingga keputusan panitia sertifikasi.</span>
-</div>
-</div>
-<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-start gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-tertiary-container font-bold text-sm">checklist</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-md text-primary font-bold">Checklist Dokumen ISO</span>
-<span class="font-body-sm text-on-surface-variant mt-0.5">Persiapan klausul wajib sebelum tinjauan dokumen dimulai.</span>
-</div>
-</div>
-<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-start gap-space-sm">
-<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary font-bold text-sm">support_agent</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-md text-primary font-bold">Konsultasi Jadwal Terbatas</span>
-<span class="font-body-sm text-on-surface-variant mt-0.5">Prioritas ketersediaan Lead Auditor KAN untuk slot kuartal berjalan.</span>
-</div>
-</div>
-</div>
-<!-- Strict Regulatory Boundary Qualifier -->
-<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-sm">
-<span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5">info</span>
-<div class="flex flex-col space-y-1">
-<span class="font-label-xs text-on-surface uppercase tracking-wider font-bold">Pemberitahuan Kualifikasi Calon Klien</span>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-                Khusus untuk perusahaan dan konsultan ISO yang merencanakan audit sertifikasi terakreditasi KAN. Perhitungan didasarkan pada kompleksitas operasional serta jumlah personel terdampak.
-              </p>
-</div>
-</div>
-<!-- Sovereign Trust Guarantee Pill -->
-<div class="flex items-center gap-space-xs bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg self-start shadow-sm">
-<span class="material-symbols-outlined text-tertiary-fixed text-base">gavel</span>
-<span class="font-label-xs uppercase tracking-wider">
-              Lembaga Sertifikasi Independen (ISO/IEC 17021-1) • Bebas Konflik Kepentingan • Tanpa Jasa Konsultasi
-            </span>
-</div>
-</div>
-<!-- RIGHT COLUMN: Interactive 2-Step Form Card -->
-<div class="lg:col-span-6">
-<div class="relative bg-surface-container-lowest rounded-2xl shadow-xl p-space-md sm:p-space-lg lg:p-space-xl">
-<!-- Step Indicators -->
-<div class="flex items-center justify-between pb-space-md mb-space-md">
-<div class="flex flex-col">
-<span class="font-label-xs text-on-surface-variant uppercase tracking-wider">Simulasi Sertifikasi Resmi</span>
-<h2 class="font-headline-md text-primary font-bold">Hitung Estimasi Sertifikasi</h2>
-</div>
-<div class="flex items-center gap-2">
-<div class="flex items-center gap-1.5 px-space-sm py-1 bg-primary text-on-primary rounded text-xs font-bold transition-all" id="step-pill-1">
-<span class="w-4 h-4 rounded-full bg-on-primary text-primary flex items-center justify-center text-[10px]">1</span>
-<span>Data Kontak</span>
-</div>
-<div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded text-xs font-bold transition-all" id="step-pill-2">
-<span class="w-4 h-4 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center text-[10px]">2</span>
-<span>Perusahaan</span>
-</div>
-</div>
-</div>
-<!-- Progress Bar -->
-<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden mb-space-lg">
-<div class="h-full bg-secondary transition-all duration-300 w-1/2" id="form-progress-bar"></div>
-</div>
-<!-- THE FORM -->
-<form id="iso-estimator-form" onsubmit="event.preventDefault();">
-<!-- STEP 1 CONTAINER -->
-<div class="space-y-space-md" id="step-1">
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="lead_name">Nama Lengkap Anda <span class="text-error">*</span></label>
-<input class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="lead_name" placeholder="Contoh: Budi Santoso" required="" type="text"/>
-</div>
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="lead_phone">Nomor WhatsApp Aktif <span class="text-error">*</span></label>
-<div class="flex items-center shadow-sm rounded-lg overflow-hidden bg-surface-container-lowest">
-<span class="bg-surface-container-high px-space-md py-3 font-label-md text-primary font-bold shrink-0">+62</span>
-<input class="w-full px-space-md py-3 text-on-surface placeholder:text-outline text-body-md focus:outline-none" id="lead_phone" placeholder="81234567890" required="" type="tel"/>
-</div>
-<span class="font-label-xs text-on-surface-variant">Kalkulasi dan dokumen pengantar akan dikirimkan langsung ke nomor ini.</span>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="lead_role">Jabatan / Posisi <span class="text-error">*</span></label>
-<input class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="lead_role" placeholder="Direktur / QHSE / HRD" required="" type="text"/>
-</div>
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="lead_city">Kota Operasional <span class="text-error">*</span></label>
-<input class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="lead_city" placeholder="Jakarta / Surabaya / Cikarang" required="" type="text"/>
-</div>
-</div>
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="lead_email">Email Perusahaan / Resmi <span class="text-error">*</span></label>
-<input class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="lead_email" placeholder="nama@perusahaan.co.id" required="" type="email"/>
-</div>
-<div class="pt-space-sm">
-<button class="w-full py-3.5 px-space-lg bg-secondary text-on-secondary font-label-md font-bold rounded-lg shadow-md hover:bg-secondary/90 transition-all flex items-center justify-center gap-space-xs group" id="btn-to-step-2" type="button">
-<span>Lanjut ke Data Perusahaan</span>
-<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- STEP 2 CONTAINER (Hidden by default) -->
-<div class="space-y-space-md hidden" id="step-2">
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="comp_name">Nama Entitas / Perusahaan <span class="text-error">*</span></label>
-<input class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="comp_name" placeholder="PT Contoh Sejahtera Indonesia" required="" type="text"/>
-</div>
-<!-- Registration Type Radios -->
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold">Anda Mendaftar Sebagai <span class="text-error">*</span></label>
-<div class="grid grid-cols-2 gap-space-sm">
-<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
-<input checked="" class="w-4 h-4 text-primary focus:ring-0 accent-primary" name="applicant_type" type="radio" value="Perusahaan"/>
-<span class="font-label-sm text-on-surface font-bold">Perusahaan Langsung</span>
-</label>
-<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
-<input class="w-4 h-4 text-primary focus:ring-0 accent-primary" name="applicant_type" type="radio" value="Konsultan ISO"/>
-<span class="font-label-sm text-on-surface font-bold">Konsultan ISO</span>
-</label>
-</div>
-</div>
-<!-- Multi-select ISO Scope -->
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold">Standar ISO yang Dibutuhkan (Bisa Pilih Lebih dari 1) <span class="text-error">*</span></label>
-<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input checked="" class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="ISO 9001"/>
-<span class="text-primary truncate">ISO 9001 (Mutu)</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="ISO 14001"/>
-<span class="text-primary truncate">ISO 14001 (Lingk.)</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="ISO 45001"/>
-<span class="text-primary truncate">ISO 45001 (K3)</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="ISO 37001"/>
-<span class="text-primary truncate">ISO 37001 (SMAP)</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="ISO 27001"/>
-<span class="text-primary truncate">ISO 27001 (InfoSec)</span>
-</label>
-<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="accent-primary w-3.5 h-3.5" name="iso_scope" type="checkbox" value="HACCP"/>
-<span class="text-primary truncate">HACCP (Pangan)</span>
-</label>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="comp_industry">Bidang Industri <span class="text-error">*</span></label>
-<select class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="comp_industry">
-<option value="Manufaktur">Manufaktur / Pabrikasi</option>
-<option value="Konstruksi">Konstruksi &amp; Rekayasa</option>
-<option value="Jasa">Jasa Korporasi &amp; Komersial</option>
-<option value="Makanan">Makanan &amp; Minuman</option>
-<option value="Kesehatan">Kesehatan &amp; Farmasi</option>
-<option value="Energi">Pertambangan, Minyak &amp; Energi</option>
-<option value="Logistik">Logistik &amp; Distribusi</option>
-<option value="IT">Teknologi Informasi &amp; Finansial</option>
-<option value="Lainnya">Sektor Lainnya</option>
-</select>
-</div>
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold" for="comp_target">Target Waktu Audit <span class="text-error">*</span></label>
-<select class="w-full bg-surface-container-lowest px-space-md py-3 rounded-lg text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 shadow-sm transition-all" id="comp_target">
-<option value="Kurang dari 1 bulan">Kurang dari 1 bulan (Urgent)</option>
-<option selected="" value="1-3 bulan">1 – 3 bulan ke depan</option>
-<option value="3-6 bulan">3 – 6 bulan ke depan</option>
-<option value="Lebih dari 6 bulan">Rencana tahun depan (&gt;6 bulan)</option>
-</select>
-</div>
-</div>
-<!-- Number of Employees Radios -->
-<div class="flex flex-col space-y-1">
-<label class="font-label-sm text-on-surface font-semibold">Estimasi Jumlah Karyawan / Personel Aktif <span class="text-error">*</span></label>
-<div class="grid grid-cols-5 gap-1.5">
-<label class="text-center py-2 px-1 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="sr-only peer" name="emp_count" type="radio" value="1-25"/>
-<div class="peer-checked:bg-primary peer-checked:text-on-primary py-1 rounded">1–25</div>
-</label>
-<label class="text-center py-2 px-1 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input checked="" class="sr-only peer" name="emp_count" type="radio" value="26-100"/>
-<div class="peer-checked:bg-primary peer-checked:text-on-primary py-1 rounded">26–100</div>
-</label>
-<label class="text-center py-2 px-1 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="sr-only peer" name="emp_count" type="radio" value="101-250"/>
-<div class="peer-checked:bg-primary peer-checked:text-on-primary py-1 rounded">101–250</div>
-</label>
-<label class="text-center py-2 px-1 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="sr-only peer" name="emp_count" type="radio" value="251-500"/>
-<div class="peer-checked:bg-primary peer-checked:text-on-primary py-1 rounded">251–500</div>
-</label>
-<label class="text-center py-2 px-1 rounded bg-surface-container-low text-xs font-semibold cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="sr-only peer" name="emp_count" type="radio" value="&gt;500"/>
-<div class="peer-checked:bg-primary peer-checked:text-on-primary py-1 rounded">&gt;500</div>
-</label>
-</div>
-</div>
-<!-- Consent Box -->
-<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
-<input checked="" class="mt-1 accent-primary w-4 h-4 shrink-0" id="user_consent" required="" type="checkbox"/>
-<label class="font-body-sm text-on-surface cursor-pointer select-none" for="user_consent">
-                    Saya bersedia dihubungi tim MSI melalui WhatsApp dan email untuk verifikasi ruang lingkup audit.
-                  </label>
-</div>
-<div class="hidden p-space-sm rounded-lg bg-error-container text-on-error-container font-body-sm" id="submit-error"></div>
-<div class="flex items-center gap-space-sm pt-space-xs">
-<button class="py-3.5 px-space-md bg-surface-container text-on-surface font-label-md font-bold rounded-lg hover:bg-surface-container-high transition-all" id="btn-back-to-step-1" type="button">
-                    Kembali
-                  </button>
-<button class="flex-1 py-3.5 px-space-lg bg-primary text-on-primary font-label-md font-bold rounded-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" id="btn-submit-estimate" type="button">
-<span class="material-symbols-outlined text-tertiary-fixed text-base">calculate</span>
-<span>Lihat Hasil Estimasi Saya</span>
-</button>
-</div>
-<div class="flex items-center justify-center gap-1 text-center">
-<span class="material-symbols-outlined text-xs text-on-surface-variant">lock</span>
-<span class="font-label-xs text-on-surface-variant">Data Anda aman dan hanya digunakan untuk keperluan layanan sertifikasi.</span>
-</div>
-</div>
-<!-- STEP 3: SIMULATED CALCULATION & AUDIT READINESS RESULT -->
-<div class="hidden flex-col items-center py-space-lg text-center space-y-space-md" id="step-loading-result">
-<!-- Spinner State -->
-<div class="flex flex-col items-center space-y-space-md w-full" id="sim-spinner">
-<div class="w-16 h-16 rounded-full border-4 border-surface-container border-t-secondary animate-spin"></div>
-<div class="space-y-1">
-<h3 class="font-headline-sm text-primary font-bold">Menyimpan Data &amp; Menghitung Estimasi...</h3>
-<p class="font-body-sm text-on-surface-variant" id="loading-sub-text">Mengkalkulasi durasi audit auditor mandays untuk <span class="font-bold text-primary" id="dyn-comp-name">PT Anda</span>...</p>
-</div>
-<div class="w-full max-w-xs bg-surface-container h-2 rounded-full overflow-hidden">
-<div class="h-full bg-secondary w-0 transition-all duration-1000" id="sim-bar"></div>
-</div>
-</div>
-<!-- Finished Calculation View -->
-<div class="hidden w-full flex-col text-left space-y-space-md" id="sim-finished">
-<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
-<div class="w-8 h-8 rounded-full bg-on-tertiary-container/20 text-on-tertiary-container flex items-center justify-center">
-<span class="material-symbols-outlined text-lg">check_circle</span>
-</div>
-<div>
-<span class="font-label-xs uppercase tracking-wider font-bold text-on-tertiary-container">Kalkulasi Awal Selesai</span>
-<h4 class="font-headline-sm text-primary font-bold leading-tight">Proyeksi Ruang Lingkup Audit Tersedia</h4>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
-<div class="flex justify-between items-center py-1 border-b border-surface-container">
-<span class="font-body-sm text-on-surface-variant">Badan Akreditasi</span>
-<span class="font-label-sm font-bold text-primary">KAN (Komite Akreditasi Nasional)</span>
-</div>
-<div class="flex justify-between items-center py-1 border-b border-surface-container">
-<span class="font-body-sm text-on-surface-variant">Estimasi Total Mandays</span>
-<span class="font-label-sm font-bold text-primary">3.5 – 5 Auditor Days (Stage 1 + Stage 2)</span>
-</div>
-<div class="flex justify-between items-center py-1 border-b border-surface-container">
-<span class="font-body-sm text-on-surface-variant">Rekomendasi Waktu Pelaksanaan</span>
-<span class="font-label-sm font-bold text-secondary">Slot Tersedia dalam 14 Hari Kerja</span>
-</div>
-<div class="flex justify-between items-center py-1">
-<span class="font-body-sm text-on-surface-variant">Checklist Regulasi</span>
-<span class="font-label-sm font-bold text-on-tertiary-container">Lengkap &amp; Siap Diunduh</span>
-</div>
-</div>
-<div class="p-space-sm bg-surface-container rounded-lg text-center">
-<p class="font-body-sm text-on-surface">
-                      Rincian resmi &amp; penawaran formal telah diarahkan ke WhatsApp <span class="font-bold text-primary" id="dyn-lead-phone"></span>.
-                    </p>
-</div>
-<button class="w-full py-3 bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md font-bold rounded-lg transition-colors" onclick="location.reload()" type="button">
-                    Mulai Perhitungan Baru
-                  </button>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-<!-- Footer Micro Regulatory Notice -->
-<div class="mt-space-xl pt-space-lg border-t border-surface-container flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-xs gap-space-sm">
-<span>© PT Multi Sertifikasi Indonesia • Lembaga sertifikasi independen, tidak menyediakan jasa konsultasi.</span>
-<div class="flex items-center gap-space-md">
-<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span> ISO/IEC 17021-1:2015</span>
-<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span> KAN Reg: LSSM-047-IDN</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+<html lang="id"><head><meta charset="utf-8"/><title>Estimasi Biaya Sertifikasi ISO – PT Multi Sertifikasi Indonesia</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","outline":"#74777d","tertiary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","on-secondary-fixed-variant":"#264191","error-container":"#ffdad6","primary":"#000f1d","on-surface":"#0b1c30","error":"#ba1a1a","surface-tint":"#4c6075","on-secondary":"#ffffff","tertiary-fixed":"#89f5e7","surface-bright":"#f8f9ff","inverse-surface":"#213145","background":"#f8f9ff","surface-container-highest":"#d3e4fe","on-background":"#0b1c30","secondary":"#4059aa","primary-fixed-dim":"#b3c9e0","on-secondary-fixed":"#00164e","secondary-fixed-dim":"#b6c4ff","on-primary-fixed-variant":"#34495c","secondary-fixed":"#dce1ff","on-secondary-container":"#1d3989","on-error":"#ffffff","on-tertiary-fixed-variant":"#005049","on-surface-variant":"#43474c","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-tertiary":"#ffffff","on-primary-container":"#788da3","inverse-primary":"#b3c9e0","inverse-on-surface":"#eaf1ff","primary-fixed":"#cfe5fd","on-tertiary-fixed":"#00201d","on-primary-fixed":"#061d2f","primary-container":"#0f2537","surface-container-high":"#dce9ff","secondary-container":"#8fa7fe","on-tertiary-container":"#1e9b8f","tertiary-container":"#002925","surface-variant":"#d3e4fe","tertiary":"#00110f","surface-container":"#e5eeff","outline-variant":"#c3c7cd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","space-xl":"2.5rem","margin-sm":"1rem","space-md":"1rem",gutter:"1.5rem","space-xs":"0.25rem","gutter-sm":"1rem",margin:"2rem","space-lg":"1.5rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-xs":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-xl-mobile":["30px",{lineHeight:"38px",fontWeight:"700"}],"label-xs":["11px",{lineHeight:"14px",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",fontWeight:"600"}]}}}};</script></head><body class="bg-[#0f2537] font-body-md text-on-surface antialiased">
+<header class="w-full bg-white border-b border-[#e3e8ef]">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 bg-[#0f2537] rounded flex items-center justify-center text-white text-[13px] font-bold tracking-wider">MSI</div>
+      <div class="leading-tight">
+        <div class="text-[15px] font-bold text-[#0f2537]">PT Multi Sertifikasi Indonesia</div>
+        <div class="text-[11px] text-[#43474c] uppercase tracking-wider">Lembaga Sertifikasi Terakreditasi KAN</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="w-full">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8 py-8 lg:py-14 grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-[auto_1fr] gap-x-12 gap-y-6">
+
+    <!-- Intro -->
+    <div class="lg:col-span-6 lg:col-start-1 lg:row-start-1 text-white">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#89f5e7] text-[12px] font-bold uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[16px]">calculate</span> Kalkulator Estimasi Gratis
+      </div>
+      <h1 class="mt-4 text-[30px] leading-[38px] lg:text-[42px] lg:leading-[50px] font-bold tracking-tight">Hitung Estimasi Biaya Sertifikasi ISO Anda dalam 1 Menit</h1>
+      <p class="mt-3 text-[17px] text-[#cfe5fd]">Isi 2 langkah singkat, hasil estimasi langsung tampil.</p>
+    </div>
+
+    <!-- Form -->
+    <div class="lg:col-span-6 lg:col-start-7 lg:row-start-1 lg:row-span-2">
+      <div class="bg-white rounded-2xl shadow-[0_24px_60px_rgba(0,0,0,0.35)] border-t-[6px] border-[#0f766e] p-5 sm:p-7">
+        <div class="flex items-center justify-between gap-3 mb-3">
+          <h2 class="text-[18px] sm:text-[20px] font-bold text-[#0f2537] whitespace-nowrap">Hitung Estimasi</h2>
+          <div class="flex items-center gap-1.5">
+            <div class="flex items-center gap-1.5 px-2.5 py-1 bg-primary text-on-primary rounded-full text-[12px] font-bold transition-all" id="step-pill-1"><span>1</span><span>Kontak</span></div>
+            <div class="flex items-center gap-1.5 px-2.5 py-1 bg-surface-container text-on-surface-variant rounded-full text-[12px] font-bold transition-all" id="step-pill-2"><span>2</span><span>Perusahaan</span></div>
+          </div>
+        </div>
+        <div class="w-full bg-[#e3e8ef] h-1.5 rounded-full overflow-hidden mb-6">
+          <div class="h-full bg-[#0f766e] transition-all duration-300 w-1/2" id="form-progress-bar"></div>
+        </div>
+
+        <form id="iso-estimator-form" onsubmit="event.preventDefault();" novalidate>
+          <!-- STEP 1 -->
+          <div class="space-y-4" id="step-1">
+            <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="lead_name">Nama lengkap <span class="text-error">*</span></label>
+              <input class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="lead_name" placeholder="Budi Santoso" required type="text" autocomplete="name"/></div>
+            <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="lead_phone">Nomor WhatsApp <span class="text-error">*</span></label>
+              <div class="flex rounded-lg border-[1.5px] border-[#9AA5B4] bg-[#F3F6FB] focus-within:border-[#0f766e] focus-within:ring-4 focus-within:ring-[#0f766e]/15 focus-within:bg-white transition overflow-hidden">
+                <span class="px-4 py-3 text-[16px] font-bold text-[#0f2537] bg-[#e3e8ef]">+62</span>
+                <input class="w-full bg-transparent px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none" id="lead_phone" placeholder="81234567890" required type="tel" inputmode="tel" autocomplete="tel-national"/>
+              </div></div>
+            <div class="grid grid-cols-2 gap-3">
+              <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="lead_role">Jabatan <span class="text-error">*</span></label>
+                <input class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="lead_role" placeholder="Direktur / QHSE / HRD" required type="text"/></div>
+              <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="lead_city">Kota <span class="text-error">*</span></label>
+                <input class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="lead_city" placeholder="Jakarta" required type="text"/></div>
+            </div>
+            <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="lead_email">Email perusahaan <span class="text-error">*</span></label>
+              <input class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="lead_email" placeholder="nama@perusahaan.co.id" required type="email" autocomplete="email"/></div>
+            <button class="w-full mt-2 py-4 rounded-lg bg-[#0f766e] hover:bg-[#115e59] text-white text-[16px] font-bold shadow-md transition flex items-center justify-center gap-2" id="btn-to-step-2" type="button">
+              Lanjut <span class="material-symbols-outlined text-[20px]">arrow_forward</span></button>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="space-y-5 hidden" id="step-2">
+            <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="comp_name">Nama perusahaan <span class="text-error">*</span></label>
+              <input class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="comp_name" placeholder="PT Contoh Sejahtera" required type="text" autocomplete="organization"/></div>
+            <div><span class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5">Mendaftar sebagai <span class="text-error">*</span></span>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input checked class="accent-[#0f766e] w-4 h-4" name="applicant_type" type="radio" value="Perusahaan"/><span>Perusahaan</span></label>
+                <label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="applicant_type" type="radio" value="Konsultan ISO"/><span>Konsultan ISO</span></label>
+              </div></div>
+            <div><span class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5">Standar ISO <span class="font-normal text-[#43474c]">(boleh lebih dari 1)</span> <span class="text-error">*</span></span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                <label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input checked class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="ISO 9001"/><span>ISO 9001 · Mutu</span></label><label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="ISO 14001"/><span>ISO 14001 · Lingkungan</span></label><label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="ISO 45001"/><span>ISO 45001 · K3</span></label>
+                <label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="ISO 37001"/><span>ISO 37001 · SMAP</span></label><label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="ISO 27001"/><span>ISO 27001 · InfoSec</span></label><label class="flex items-center gap-2 px-3 py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white cursor-pointer text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] has-[:checked]:border-[#0f766e] has-[:checked]:bg-[#E6F4F2] transition"><input class="accent-[#0f766e] w-4 h-4" name="iso_scope" type="checkbox" value="HACCP"/><span>HACCP · Pangan</span></label>
+              </div></div>
+            <div><span class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5">Jumlah karyawan <span class="text-error">*</span></span>
+              <div class="grid grid-cols-5 gap-1.5"><label class="cursor-pointer"><input class="sr-only peer" name="emp_count" type="radio" value="1-25"/><div class="text-center py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] peer-checked:bg-[#0f2537] peer-checked:border-[#0f2537] peer-checked:text-white transition">1–25</div></label><label class="cursor-pointer"><input checked class="sr-only peer" name="emp_count" type="radio" value="26-100"/><div class="text-center py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] peer-checked:bg-[#0f2537] peer-checked:border-[#0f2537] peer-checked:text-white transition">26–100</div></label><label class="cursor-pointer"><input class="sr-only peer" name="emp_count" type="radio" value="101-250"/><div class="text-center py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] peer-checked:bg-[#0f2537] peer-checked:border-[#0f2537] peer-checked:text-white transition">101–250</div></label><label class="cursor-pointer"><input class="sr-only peer" name="emp_count" type="radio" value="251-500"/><div class="text-center py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] peer-checked:bg-[#0f2537] peer-checked:border-[#0f2537] peer-checked:text-white transition">251–500</div></label><label class="cursor-pointer"><input class="sr-only peer" name="emp_count" type="radio" value=">500"/><div class="text-center py-2.5 rounded-lg border-[1.5px] border-[#C9D1DC] bg-white text-[13px] font-semibold text-[#0b1c30] hover:border-[#0f766e] peer-checked:bg-[#0f2537] peer-checked:border-[#0f2537] peer-checked:text-white transition">&gt;500</div></label></div></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="comp_industry">Bidang industri <span class="text-error">*</span></label>
+                <select class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="comp_industry">
+                  <option value="Manufaktur">Manufaktur</option><option value="Konstruksi">Konstruksi</option>
+                  <option value="Jasa">Jasa &amp; Komersial</option><option value="Makanan">Makanan &amp; Minuman</option>
+                  <option value="Kesehatan">Kesehatan &amp; Farmasi</option><option value="Energi">Tambang, Migas &amp; Energi</option>
+                  <option value="Logistik">Logistik &amp; Distribusi</option><option value="IT">TI &amp; Keuangan</option>
+                  <option value="Lainnya">Lainnya</option></select></div>
+              <div><label class="block text-[14px] font-semibold text-[#0b1c30] mb-1.5" for="comp_target">Target audit <span class="text-error">*</span></label>
+                <select class="w-full bg-[#F3F6FB] border-[1.5px] border-[#9AA5B4] rounded-lg px-4 py-3 text-[16px] text-[#0b1c30] placeholder:text-[#7a8594] focus:outline-none focus:border-[#0f766e] focus:ring-4 focus:ring-[#0f766e]/15 focus:bg-white transition" id="comp_target">
+                  <option value="Kurang dari 1 bulan">&lt; 1 bulan (urgent)</option><option selected value="1-3 bulan">1–3 bulan</option>
+                  <option value="3-6 bulan">3–6 bulan</option><option value="Lebih dari 6 bulan">&gt; 6 bulan</option></select></div>
+            </div>
+            <label class="flex items-start gap-3 cursor-pointer" for="user_consent">
+              <input checked class="mt-0.5 accent-[#0f766e] w-5 h-5 shrink-0" id="user_consent" required type="checkbox"/>
+              <span class="text-[14px] text-[#0b1c30]">Saya bersedia dihubungi tim MSI via WhatsApp dan email.</span></label>
+            <div class="hidden p-3 rounded-lg bg-error-container text-on-error-container text-[14px]" id="submit-error"></div>
+            <div class="flex items-center gap-2">
+              <button class="py-4 px-4 rounded-lg border-[1.5px] border-[#C9D1DC] text-[#0b1c30] text-[15px] font-bold hover:bg-[#F3F6FB] transition" id="btn-back-to-step-1" type="button">Kembali</button>
+              <button class="flex-1 py-4 px-4 rounded-lg bg-[#0f766e] hover:bg-[#115e59] disabled:opacity-60 text-white text-[16px] font-bold shadow-md transition flex items-center justify-center gap-2" id="btn-submit-estimate" type="button">
+                <span class="material-symbols-outlined text-[20px]">calculate</span><span>Lihat Hasil Estimasi</span></button>
+            </div>
+            <p class="flex items-center justify-center gap-1 text-[12px] text-[#43474c]"><span class="material-symbols-outlined text-[14px]">lock</span>Data Anda aman dan tidak dibagikan.</p>
+          </div>
+
+          <!-- STEP 3: loading -->
+          <div class="hidden flex-col items-center py-10 text-center gap-4" id="step-loading-result">
+            <div class="w-14 h-14 rounded-full border-4 border-[#e3e8ef] border-t-[#0f766e] animate-spin"></div>
+            <div>
+              <h3 class="text-[18px] font-bold text-[#0f2537]">Menghitung estimasi...</h3>
+              <p class="text-[14px] text-[#43474c]">untuk <span class="font-bold text-[#0f2537]" id="dyn-comp-name">perusahaan Anda</span></p>
+            </div>
+            <div class="w-full max-w-xs bg-[#e3e8ef] h-2 rounded-full overflow-hidden"><div class="h-full bg-[#0f766e] w-0 transition-all duration-1000" id="sim-bar"></div></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Benefit + kepercayaan -->
+    <div class="lg:col-span-6 lg:col-start-1 lg:row-start-2 lg:self-start text-white">
+      <ul class="space-y-3 text-[16px]">
+        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[#89f5e7]">check_circle</span>Kisaran biaya &amp; mandays audit</li>
+        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[#89f5e7]">check_circle</span>Perkiraan timeline sampai sertifikat terbit</li>
+        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[#89f5e7]">check_circle</span>Checklist dokumen persiapan audit</li>
+      </ul>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <div class="flex items-center gap-3 bg-white rounded-xl px-3 py-2">
+          <img alt="Logo MSI" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_3i0L_Kcg_r8f7mnddre-TPO755cxAbKOwzXvZ3h3GD78sNCNOARGc-x_8jcg1Dq-b3934abUTOGL54siXku1TReuzE4w4LfbTj9S12FKPVXRLMKPzbEDHO-_14TAmCYNl1hVpp2TPGVgY8gk9IMKMwHvqHmLqzTSOAE0RLq5VPvczYzr6WPmgNwI0JxtaRtgyOjJ8d3zhHnNQwsrg68Rwe17DCGTnshzSromBGRUwG95cXzDu7YIIIwNnjNn8OgWtT4"/>
+          <img alt="Logo KAN" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvjFKlSDxwMELkHEpdSgoNe74uuQHFzFUTeJp_m1Y5Kz4QdYMsKUByUDSHdQyOJWuWUwQWko4UTSH__8pWX-x0wUWA4ee2ut-amXkJMvWJ470556xjDNCfKRWfvf2t9rrvL1FbqpSeTm-QAA3CEICtZOxowHiPsz-CHvPiivtZsb8ZGvV9F67rQbySd0XMVC2Ffd5Kzsr_bflYoNlRFuqriX2hjNTc7GHu402M8Yr3OzlB67u2oUp_4G2r52elJGhR2vo"/>
+        </div>
+        <p class="text-[13px] text-[#cfe5fd] leading-snug">Terakreditasi KAN<br/>LSSM-047-IDN • LSSML-023-IDN • SMAP-009-IDN</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="w-full border-t border-white/10 py-5">
+  <p class="max-w-6xl mx-auto px-4 lg:px-8 text-[12px] text-[#8fa3b8]">© PT Multi Sertifikasi Indonesia • Lembaga sertifikasi independen, tidak menyediakan jasa konsultasi.</p>
+</footer>
 <script>
 (function () {
   // ===== GANTI BAGIAN INI =====
@@ -478,4 +265,5 @@
       });
   });
 })();
-</script></main><footer class="w-full bg-primary-container text-on-primary-container py-space-lg shadow-[0_-1px_6px_rgba(0,0,0,0.04)]"><div class="max-w-7xl mx-auto px-margin-sm lg:px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md text-center sm:text-left"><div class="flex flex-col sm:flex-row items-center gap-space-sm"><span class="font-label-md font-bold text-on-primary">© PT Multi Sertifikasi Indonesia</span><span class="hidden sm:inline text-on-primary-container/60">•</span><span class="font-body-sm text-on-primary-container">Lembaga sertifikasi independen, tidak menyediakan jasa konsultasi.</span></div><div class="flex items-center gap-space-xs bg-surface-container-high/10 px-space-sm py-1 rounded"><span class="material-symbols-outlined text-sm text-on-primary">policy</span><span class="font-label-xs text-on-primary-fixed-variant uppercase tracking-wider">ISO/IEC 17021-1 Compliant</span></div></div></footer></body></html>
+</script>
+</body></html>
